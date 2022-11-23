@@ -3,6 +3,7 @@
     <menu-component />
     <building-image-component />
     <building-structure />
+    <building-amenities />
 </div>
    
 </template>
@@ -10,5 +11,6 @@
 import MenuComponent from "./menuComponent.vue"
 import BuildingImageComponent from './building-image.component.vue'
 import BuildingStructure from './Building-structure.vue'
+import BuildingAmenities from './Building-amenities.vue'
 
 </script>
