@@ -1,5 +1,6 @@
 <template>
- <div>Hello Wolrd!</div>
+<div class="main"></div>
+ 
 </template>
 
 <script setup>
