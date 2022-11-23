@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Montserrat Arm";
+    src: url("../public/fonter.am_montserrat-armenian/Montserratarm-Light.otf")
+      format("opentype");
+  }
+body{
+    font-family: Montserrat arm;
+    color: #AFAEB1;
+}
