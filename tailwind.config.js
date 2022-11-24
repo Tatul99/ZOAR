@@ -15,11 +15,13 @@ darkMode:'class',
         'green': '#13ce66',
         'yellow': '#ffc82c',
         'gray-dark': '#273444',
-        'gray': '#8492a6',
+        'gray': 'rgba(0, 0, 0, 0.1)',
         'gray-light': '#d3dce6',
         'white':'#FFFFFF'
       },
-      
+      boxShadow:{
+        'lg':'0px 3px 20px 3px'
+      },
       opacity: {
         '0': '0',
         '20': '0.2',
