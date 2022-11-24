@@ -5,6 +5,7 @@
     <building-structure />
     <building-amenities />
     <packages-component />
+    <flor-plans />
 </div>
    
 </template>
@@ -14,5 +15,6 @@ import BuildingImageComponent from './building-image.component.vue'
 import BuildingStructure from './Building-structure.vue'
 import BuildingAmenities from './Building-amenities.vue'
 import PackagesComponent from './packages-component.vue'
+import FlorPlans from './fllorPlans.vue'
 
 </script>

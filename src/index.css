@@ -8,6 +8,7 @@
       format("opentype");
   }
 body{
+  overflow-x: hidden;
     font-family: Montserrat arm;
     color: #AFAEB1;
 }
