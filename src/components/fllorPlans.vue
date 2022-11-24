@@ -3,7 +3,7 @@
             <div class="plans-title text-blue text-[40px] uppercase" >Հատակագծեր</div>
             <div class="plans-text text-blue mb-[200px]">Այս բաժնում կարող եք ծանոթանալ շենքում հասանելի բնակարանների հատակագծերինև ընտրել ձեզ առավել հարմար տարբերակը։</div>
             <div class="carousel     relative">
-              <div class="corusel-contain max-h-[870px] p-[56px] bg-white shadow-lg flex justify-between  z-10 shadow-gray">
+              <div class="corusel-contain max-h-[870px] mb-[200px] p-[56px] bg-white shadow-lg flex justify-between  z-10 shadow-gray">
                 <div class="for-image flex justify-between">
                     <div class="carousel-items min-w-[400px] flex flex-col flex-wrap  justify-between">
                         <div class=" relative cursor-pointer border-[1px]  border-blue p-[20px] w-[160px] h-[160px]"  v-for="(item,i) in carouselImages" :key="item" @click="chengeImageUrl(item,i)"
