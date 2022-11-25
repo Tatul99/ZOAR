@@ -11,4 +11,8 @@ body{
   overflow-x: hidden;
     font-family: Montserrat arm;
     color: #AFAEB1;
+   
+}
+html{
+  scroll-behavior: smooth;
 }

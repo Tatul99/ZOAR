@@ -1,5 +1,5 @@
 <template>
-    <div class="plans-main flex flex-col items-center mt-[40px]">
+    <div id="fllorePlans" class="plans-main flex flex-col items-center mt-[40px]">
             <div class="plans-title text-blue text-[40px] uppercase" >Հատակագծեր</div>
             <div class="plans-text text-blue mb-[200px]">Այս բաժնում կարող եք ծանոթանալ շենքում հասանելի բնակարանների հատակագծերինև ընտրել ձեզ առավել հարմար տարբերակը։</div>
             <div class="carousel     relative">

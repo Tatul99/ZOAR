@@ -1,5 +1,5 @@
 <template>
-    <div class="packages-main pt-[100px] flex flex-col items-center ">
+    <div id="packages" class="packages-main pt-[100px] flex flex-col items-center ">
         <div class="packages-title text-blue text-[40px] font-bold leading-[49px] mb-[40px]">ՓԱԹԵԹՆԵՐ</div>
         <div class="under-title text-blue text-[16px] mb-[80px]">Ստորև կարող եք ընտրել ներքին հարդարման Ձեզ առավել հարմար փաթեթը։</div>
         <div class="packages-contain pl-[250px] pr-[200px] w-[100%] ">

@@ -5,20 +5,27 @@
         <ul class="flex  ">
             <li v-for="item in menuItems" :key="item.id"
             class="text-[16px] cursor-pointer leading-5 ml-[48px]"
+            @click="scrollToId(item.pathId)"
             >{{item.title}}</li>
         </ul>
     </div>
+   
 </div>
 </template>
 
 <script setup>
 let menuItems =[
-    {id:1,title:'Շենքի կառուցվածքը'},
-    {id:2,title:'Շենքի հարմարությունները'},
-    {id:3,title:'Փաթեթեներ'},
-    {id:4,title:'Հատակագծեր'},
+    {id:1,title:'Շենքի կառուցվածքը',pathId:'BuildingStructure'},
+    {id:2,title:'Շենքի հարմարությունները',pathId:'buildingAmenities'},
+    {id:3,title:'Փաթեթեներ',pathId:'packages'},
+    {id:4,title:'Հատակագծեր',pathId:'fllorePlans'},
     {id:5,title:'Կապ'}
 ]
+
+function scrollToId(id) {
+   
+    document.getElementById(id).scrollIntoView();
+}
 </script>
 
 <style scoped>

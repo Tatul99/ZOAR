@@ -1,6 +1,6 @@
 <template>
 
-    <div class="amenites-main flex flex-col items-center pt-[100px]">
+    <div id="buildingAmenities" class="amenites-main flex flex-col items-center pt-[100px]">
         <div class="title uppercase mb-[80px] text-blue text-[40px] leading-[49px] font-bold">Շենքի հարմարությունները</div>
         <div class="amenities-contain w-[100%] flex justify-between">
             <div class="container pl-[200px] w-[50%] flex flex-col justify-center">
