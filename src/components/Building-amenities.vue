@@ -2,8 +2,8 @@
 
     <div id="buildingAmenities" class="amenites-main flex flex-col items-center pt-[100px]">
         <div class="title uppercase mb-[80px] text-blue text-[40px] leading-[49px] font-bold">Շենքի հարմարությունները</div>
-        <div class="amenities-contain w-[100%] flex justify-between">
-            <div class="container pl-[200px] w-[50%] flex flex-col justify-center">
+        <div class="amenities-contain w-[100%] flex justify-between items-center ">
+            <div class="container pl-[80px] lg:pl-[200px] w-[60%] lg:w-[50%] flex flex-col justify-center">
                 <div v-for="item in amenities" :key="item.id"
                 class="text-blue text-base uppercase mb-[15px] font-normal"
                 >
@@ -15,7 +15,8 @@
                 </div>
                 </div>
             </div>
-            <div class="building-grapic-image w-[900px] h-[900px]"></div>
+            <div class="building-grapic-image hidden lg:block w-[900px] h-[900px]"></div>
+            <div class="building-grapic-image-mini w-[440px] h-[440px] lg:hidden"></div>
         </div>
     </div>
 </template>
@@ -40,6 +41,11 @@ let amenities = [
 <style scoped>
 .building-grapic-image{
     background-image: url('../../public/images/building-grapic-image.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.building-grapic-image-mini{
+    background-image: url('../../public/images/build-image-mini.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

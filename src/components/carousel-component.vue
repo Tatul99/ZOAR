@@ -10,7 +10,7 @@
    
     class=" h-full first-carousel"
   >
-    <swiper-slide class="flex items-end"  :style="`background-image:url(${SlideItem.image});background-size:100% 100%`">  <div class="text-white text-[32px] leading-[39px] uppercase mb-[40px] ml-[40px]">{{SlideItem.title}}</div></swiper-slide>
+    <swiper-slide class="flex items-end"  :style="`background-image:url(${SlideItem.image});background-size:100% 100%`">  <div class="text-white text-[28px] lg:text-[32px] leading-[39px] uppercase mb-[40px] ml-[40px]">{{SlideItem.title}}</div></swiper-slide>
     <swiper-slide>Slide 2</swiper-slide>
     <swiper-slide>Slide 3</swiper-slide>
     ...
