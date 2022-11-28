@@ -37,12 +37,5 @@ const modules = [Navigation, Pagination, Scrollbar, A11y]
 
 </script>
 <style scoped>
- .swiper-button-prev:after{
-  display: none;
-}
-.swiper-button-prev{
-  height: 300px;
-  width: 200px;
-  background-image: url(../../public/images/menu-icon.png);
-}
+ 
 </style>

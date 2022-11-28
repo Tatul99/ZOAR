@@ -1,9 +1,9 @@
 <template>
-    <div class="component-mian mb-[160px] flex justify-center items-center w-[100%] h-[760px]">
+    <div class="component-mian mb-[160px] h-[760px]">
         <swiper
     :modules="modules"
     :slides-per-view="1"
-    :space-between="50"
+        
     navigation
     :pagination="{ clickable: true }"
     :scrollbar="{ draggable: true }"
@@ -15,7 +15,7 @@
             <div class="image-text text-white text-2xl leading-[39px] text-center">Բնակելի Շենք</div>
             <button class="image-button border border-white mt-[80px] py-[24px] px-[64px] text-blue">վիդեո տուր</button>
         </div></swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>slide2</swiper-slide>
     <swiper-slide>Slide 3</swiper-slide>
     ...
   </swiper>
@@ -37,7 +37,8 @@ const modules = [Navigation, Pagination, Scrollbar, A11y]
 .image-contein{
     background-image: url('../../public/images/build-image.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-position: center;
+    /* background-size: cover;  */
 }
 .image-button{
     background: rgba(255, 255, 255, 0.3);

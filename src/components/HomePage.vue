@@ -2,6 +2,7 @@
 <div class="Home-main">
     <menu-component />
     <building-image-component />
+    <carousel-component />
     <building-structure />
     <building-amenities />
     <packages-component />
@@ -19,5 +20,6 @@ import BuildingAmenities from './Building-amenities.vue'
 import PackagesComponent from './packages-component.vue'
 import FlorPlans from './fllorPlans.vue'
 import FooterComponent from './footer-component.vue'
+
 
 </script>
