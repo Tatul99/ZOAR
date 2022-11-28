@@ -2,17 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
     font-family: "Montserrat Arm";
     src: url("../public/fonter.am_montserrat-armenian/Montserratarm-Light.otf")
       format("opentype");
   }
+  
 body{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
     font-family: Montserrat arm;
     color: #AFAEB1;
    
 }
 html{
   scroll-behavior: smooth;
+}
+.first-carousel .swiper-button-prev:after{
+  display: none;
+}
+.first-carousel .swiper-button-next:after{
+  display: none;
+}
+.first-carousel .swiper-button-prev{
+  width: 40px;
+  height: 40px;
+  background-image: url(../public/images/slider-chenge-icon.png);
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  transform: rotate(180deg);
+}
+.first-carousel .swiper-button-next{
+  width: 40px;
+  height: 40px;
+  background-image: url(../public/images/slider-chenge-icon.png);
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  
 }
