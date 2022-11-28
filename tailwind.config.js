@@ -30,6 +30,9 @@ darkMode:'class',
         '80': '0.8',
         '100': '1',
       },
+      screens: {
+        xs: '0px'
+      }
     },
   },
   plugins: [],

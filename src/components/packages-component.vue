@@ -2,13 +2,15 @@
     <div id="packages" class="packages-main pt-[100px] flex flex-col items-center ">
         <div class="packages-title text-blue text-[40px] font-bold leading-[49px] mb-[40px]">ՓԱԹԵԹՆԵՐ</div>
         <div class="under-title text-blue text-[16px] mb-[80px]">Ստորև կարող եք ընտրել ներքին հարդարման Ձեզ առավել հարմար փաթեթը։</div>
-        <div class="packages-contain pl-[250px] pr-[200px] w-[100%] ">
+        <div class="packages-contain pl-[100px] lg:pl-[250px] pr-[100px] lg:pr-[200px] w-[100%] ">
                 <div class=" flex justify-between cursor-pointer flex-wrap w-[100%] ">
-                    <div class="item hover-plus  relative flex flex-col items-center p-[64px] mb-[40px]" v-for="(item,i) in packageItems" :key="item.id"
+                    <div class="item hover-plus w-[50%]  relative flex flex-col items-center p-[20px] lg:p-[64px] mb-[40px]" v-for="(item,i) in packageItems" :key="item.id"
                         :class="{
-                            ' w-[30%]':i<packageItems.length-1,
-                            'border-r-[3px] border-blue':i<2,
-                            'w-[100%] flex justify-center border-b-2 border-blue':i === packageItems.length-1,
+                            ' lg:w-[30%]':i<packageItems.length-1,
+                            'border-r-[3px] border-blue':i<1,
+                            'lg:border-r-[3px] border-blue':i<2,
+                            
+                            'lg:w-[100%] flex lg:justify-center border-l-[3px] lg:border-l-[0px] lg:border-b-2  border-blue':i === packageItems.length-1,
                            
                         }"
                     >
@@ -52,6 +54,19 @@ left: 50%;
 }
 .hover-plus:hover .item-title{
     font-weight: 700;
+}
+@media (max-width: 1024px){
+    .hover-plus:before{
+
+top:7vh;
+right: 45%;
+}
+
+.hover-plus:hover:after{
+
+top:5vh;
+left: 50%;
+}
 }
 
 </style>
