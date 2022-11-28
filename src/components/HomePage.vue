@@ -25,9 +25,14 @@ import FooterComponent from './footer-component.vue'
 </script>
 
 <style scoped>
-@media (max-width:1024px){
-.map{
+@media screen and (max-width: 1024px) {
+  .map{
     height: 400px !important;
+  }
 }
+@media screen and (max-width: 430px) {
+  .map{
+    height: 280px !important;
+  }
 }
 </style>

@@ -1,22 +1,24 @@
 <template>
 
     <div id="buildingAmenities" class="amenites-main flex flex-col items-center pt-[100px]">
-        <div class="title uppercase mb-[80px] text-blue text-[40px] leading-[49px] font-bold">Շենքի հարմարությունները</div>
-        <div class="amenities-contain w-[100%] flex justify-between items-center ">
-            <div class="container pl-[80px] lg:pl-[200px] w-[60%] lg:w-[50%] flex flex-col justify-center">
+        <div class="title uppercase mb-[80px] text-blue text-[24px] text-center md:text-[40px] leading-[49px] font-bold">Շենքի հարմարությունները</div>
+        <div class="amenities-contain w-[100%] flex flex-col md:flex-row md:justify-between md:items-center">
+            <div class="pl-[20px] md:pl-[80px]  lg:pl-[200px]  md:w-[60%] lg:w-[50%] flex flex-col justify-center">
                 <div v-for="item in amenities" :key="item.id"
-                class="text-blue text-base uppercase mb-[15px] font-normal"
+                class="text-blue text-[12px] w-full  md:text-base uppercase mb-[15px] font-normal"
                 >
                    . {{item.text}}
 
 
                 <div class="details text-sm" v-if="item.details.length">
-                    <div v-for="detail in item.details" :key="detail.detailsId">{{detail.detailsText}}</div>
+                    <div v-for="detail in item.details"  :key="detail.detailsId">{{detail.detailsText}}</div>
                 </div>
                 </div>
             </div>
             <div class="building-grapic-image hidden lg:block w-[900px] h-[900px]"></div>
-            <div class="building-grapic-image-mini w-[440px] h-[440px] lg:hidden"></div>
+           <div class="w-full lg:w-0 h-[300px] flex justify-end">
+            <div class="building-grapic-image-mini w-[240px] h-[240px] md:w-[440px] md:h-[440px] lg:hidden"></div>
+           </div>
         </div>
     </div>
 </template>

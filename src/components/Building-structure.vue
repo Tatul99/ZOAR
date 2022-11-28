@@ -1,7 +1,7 @@
 <template>
     <div id="BuildingStructure" class="structure-main flex flex-col items-center lg:px-[200px]">
-        <div class="titel uppercase mb-[80px] text-blue text-[40px] leading-[49px] font-bold">ՇԵՆՔԻ Կառուցվածքը</div>
-        <div class="items bg-no-repeat w-[100%] h-[400px] mb-[40px] flex items-end" v-for="item in BuildingStructureItems" :key="item.id"
+        <div class="titel uppercase mb-[80px] text-blue text-[24px] md:text-[40px] leading-[49px] font-bold">ՇԵՆՔԻ Կառուցվածքը</div>
+        <div class="items bg-no-repeat w-[100%] h-[150px] md:h-[400px] mb-[40px] flex items-end" v-for="item in BuildingStructureItems" :key="item.id"
     
         >
        <carousel-component :SlideItem="item"/>
