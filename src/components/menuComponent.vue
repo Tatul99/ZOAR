@@ -13,9 +13,9 @@
     <div @click="chengeDialog()" class="mobile-menu-icon block lg:hidden "></div>
     <div v-if="dialog" class="dialog  w-[100vw] h-[100vh] fixed top-0 left-0 bg-white">
         <div  class="close-dialog flex flex-col items-end" @click="dialog = false">
-        <img class="m-[80px]" src="../../public/images/close.png" alt="">
+        <img class=" my-[60px] mr-[50px] md:m-[80px]" src="../../public/images/close.png" alt="">
         <div class="menu-items w-full uppercase">
-            <ul class="flex flex-col items-center mt-[120px]  ">
+            <ul class="flex flex-col items-start md:items-center mt-[120px]  ">
             <li  v-for="item in menuItems" :key="item.id"
             class="text-[16px]   cursor-pointer leading-[20px] mt-[40px] ml-[48px]"
             @click="scrollToId(item.pathId)"
@@ -35,7 +35,7 @@ let menuItems =[
     {id:2,title:'Շենքի հարմարությունները',pathId:'buildingAmenities'},
     {id:3,title:'Փաթեթեներ',pathId:'packages'},
     {id:4,title:'Հատակագծեր',pathId:'fllorePlans'},
-    {id:5,title:'Կապ'}
+    {id:5,title:'Կապ',pathId:'fotter-component'}
 ]
 function chengeDialog () {
     dialog.value = true

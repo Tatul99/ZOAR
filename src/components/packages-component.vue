@@ -69,5 +69,18 @@ top:5vh;
 left: 50%;
 }
 }
+@media (max-width: 430px){
+    .hover-plus:before{
+
+top:9vh;
+right: 45%;
+}
+
+.hover-plus:hover:after{
+
+top:6vh;
+left: 50%;
+}
+}
 
 </style>

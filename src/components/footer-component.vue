@@ -1,5 +1,5 @@
 <template>
-    <div class="footer-main p-[30px] md:p-[80px] lg:px-[200px] bg-blue lg:pt-[152px] lg:pb-[116px] ">
+    <div  id="fotter-component" class="footer-main p-[30px] md:p-[80px] lg:px-[200px] bg-blue lg:pt-[152px] lg:pb-[116px] ">
             <div class="contain flex justify-between w-[100%]">
 
                 <div class="logo">
